@@ -118,3 +118,18 @@ P是协方差矩阵的特征向量按照行排列出来的矩阵，每一行都�
 <a id="jump_20"></a>
 
 ### 赞赏码蚁LucasGY
+$$
+\left(\begin{array}{l}{c t^{\prime}} \\ {x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\left(\begin{array}{cccc}{\gamma} & {-\gamma \beta} & {0} & {0} \\ {-\gamma \beta} & {\gamma} & {0} & {0} \\ {0} & {0} & {1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{c t} \\ {x} \\ {y} \\ {z}\end{array}\right)
+$$
+
+$\left(\begin{array}{l}{c t^{\prime}} \\ {x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\left(\begin{array}{cccc}{\gamma} & {-\gamma \beta} & {0} & {0} \\ {-\gamma \beta} & {\gamma} & {0} & {0} \\ {0} & {0} & {1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{c t} \\ {x} \\ {y} \\ {z}\end{array}\right)$
+
+$$
+\left(\begin{array}{l}{c t^{\prime}} \\ {x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\left(\begin{array}{cccc}{\gamma} & {-\gamma \beta} & {0} & {0} \\ {-\gamma \beta} & {\gamma} & {0} & {0} \\ {0} & {0} & {1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{c t} \\ {x} \\ {y} \\ {z}\end{array}\right)
+$$
+
+$$
+\begin{equation}
+\left(\begin{array}{l}{c t^{\prime}} \\ {x^{\prime}} \\ {y^{\prime}} \\ {z^{\prime}}\end{array}\right)=\left(\begin{array}{cccc}{\gamma} & {-\gamma \beta} & {0} & {0} \\ {-\gamma \beta} & {\gamma} & {0} & {0} \\ {0} & {0} & {1} & {0} \\ {0} & {0} & {0} & {1}\end{array}\right)\left(\begin{array}{l}{c t} \\ {x} \\ {y} \\ {z}\end{array}\right)
+\end{equation}
+$$
