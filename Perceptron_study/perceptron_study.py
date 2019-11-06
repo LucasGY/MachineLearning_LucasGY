@@ -38,7 +38,7 @@ class PerceptronModel(object):
         Number of misclassification in every epoch.
         
     """
-    def __init__(self,lr=1,epochs=500,optimizer='bgd'):
+    def __init__(self,lr=1,epochs=500,optimizer='sgd2'):
         self.lr = lr
         self.epochs = epochs
         self.optimizer = optimizer
@@ -95,21 +95,23 @@ class PerceptronModel(object):
                     self.w_[1:] += update * xi
                     self.w_[0] += update
                     errors += int(update != 0)
-                    print(self.w_[1:], self.w_[0])
-                    #更新图片
-                    try:
-                        ax.lines.remove(lines[0])######important!!!
-                    except Exception:
-                        pass
-                    # plot the prediction
-                    x_ = np.arange(0,10)
-                    lines = ax.plot(x_, -(self.w_[1]*x_+self.w_[0])/self.w_[2], 'r-', lw=2)#lw:线宽
-
-                    plt.pause(1)
-                    # 关闭交互模式
-                    plt.ioff()
-                    # 图形显示
-                    plt.show()
+                    if errors != 0:
+                        
+                        print(self.w_[1:], self.w_[0])
+                        #更新图片
+                        try:
+                            ax.lines.remove(lines[0])######important!!!
+                        except Exception:
+                            pass
+                        # plot the prediction
+                        x_ = np.arange(0,10)
+                        lines = ax.plot(x_, -(self.w_[1]*x_+self.w_[0])/self.w_[2], 'r-', lw=2)#lw:线宽
+    
+                        plt.pause(1)
+                        # 关闭交互模式
+                        plt.ioff()
+                        # 图形显示
+                        plt.show()
                 self.errors.append(errors)
                 if errors == 0:
                     break
